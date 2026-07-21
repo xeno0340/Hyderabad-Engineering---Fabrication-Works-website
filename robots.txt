@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hyderabadengineeringworks.com/sitemap.xml
