@@ -11,12 +11,12 @@ const translations = {
     galleryHeading: "Our Work",
     gallerySubtext: "A look at some of our completed projects",
     aboutHeading: "About Us",
-    aboutBody: "Hyderabad Engineering & Fabrication Works has been serving customers across Telangana since 2014. Led by proprietor Hamed Shaik, we specialize in stainless steel railings, glass railings, custom gates, and general fabrication work — combining precision craftsmanship with reliable, on-time installation.",
+    aboutBody: "Hyderabad Engineering & Fabrication Works has been serving customers across Telangana since 2014. We are a trusted provider of SS railing, steel gates, and fabrication services in Mahabubnagar and surrounding areas. Led by proprietor Hamed Shaik, we specialize in stainless steel railings, glass railings, custom gates, and general fabrication work — combining precision craftsmanship with reliable, on-time installation.",
     trust1: "10+ Years in Business", trust2: "Workshop + On-Site Installation", trust3: "Serving All of Telangana",
     locationHeading: "Visit Our Workshop",
     hours: "Open Daily, 9:00 AM – 10:00 PM",
     contactHeading: "Get in Touch",
-    services: ["Stainless Steel Railings","Glass Railings","Custom Gates","Automatic Remote Gates","Remote Rolling Shutters","UPVC & Aluminum Windows","Heavy Channel Beam Work","Buffing, Mat & Mirror Polish","General Fabrication","SS Furniture"]
+    services: ["Stainless Steel Railings in Mahabubnagar","Glass Railings","Custom Steel Gates","Automatic Remote Gates","Remote Rolling Shutters","UPVC & Aluminum Windows","Heavy Channel Beam Work","Buffing, Mat & Mirror Polish","General Fabrication","SS Furniture"]
   },
   hi: {
     siteName: "हैदराबाद इंजीनियरिंग एंड फैब्रिकेशन वर्क्स",
@@ -88,13 +88,11 @@ const serviceIcons = [
   '<svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 4v9a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V4"/><line x1="6" y1="20" x2="6" y2="16"/><line x1="18" y1="20" x2="18" y2="16"/><line x1="6" y1="13" x2="18" y2="13"/></svg>'
 ];
 
-// ---------- CURATED GALLERY PHOTOS ----------
-const galleryPhotos = [
-  "work1.jpeg","work2.jpeg","work3.jpeg","work4.jpeg",
-  "work6.jpeg","work8.jpeg","work9.jpeg","work11.jpeg","work13.jpeg"
-];
-
 // ---------- APPLY TRANSLATION ----------
+// Note: the HTML already contains real, crawlable English content for
+// services and gallery (good for SEO). We only rebuild these into the
+// icon-enhanced version when a non-English language is chosen, or when
+// English is explicitly re-selected via the switcher (to restore icons).
 function applyLanguage(lang) {
   const dict = translations[lang];
   if (!dict) return;
@@ -116,19 +114,6 @@ function applyLanguage(lang) {
   document.documentElement.setAttribute('dir', lang === 'ur' ? 'rtl' : 'ltr');
 }
 
-// ---------- BUILD GALLERY ----------
-function buildGallery() {
-  const galleryGrid = document.getElementById('gallery-grid');
-  galleryGrid.innerHTML = '';
-  galleryPhotos.forEach(filename => {
-    const img = document.createElement('img');
-    img.src = `images/${filename}`;
-    img.alt = "Hyderabad Engineering & Fabrication Works project photo";
-    img.className = "gallery-img w-full h-40 object-cover rounded-lg shadow-sm cursor-pointer";
-    galleryGrid.appendChild(img);
-  });
-}
-
 // ---------- SCROLL REVEAL ----------
 function initScrollReveal() {
   const observer = new IntersectionObserver((entries) => {
@@ -147,14 +132,17 @@ function initScrollReveal() {
 const savedLang = localStorage.getItem('siteLang');
 const popup = document.getElementById('language-popup');
 
-buildGallery();
 initScrollReveal();
 
 if (savedLang) {
   popup.style.display = 'none';
+  // Only rebuild via JS if a non-English language was saved.
+  // If English was saved, leave the static HTML content as-is (already correct)
+  // but still apply the icon-enhanced version for consistency.
   applyLanguage(savedLang);
 } else {
   popup.style.display = 'flex';
+  // Gallery images are already in the static HTML — nothing to build here.
 }
 
 document.querySelectorAll('.lang-btn').forEach(button => {
