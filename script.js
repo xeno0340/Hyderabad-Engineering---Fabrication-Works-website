@@ -16,7 +16,7 @@ const translations = {
     locationHeading: "Visit Our Workshop",
     hours: "Open Daily, 9:00 AM – 10:00 PM",
     contactHeading: "Get in Touch",
-    services: ["Stainless Steel Railings in Mahabubnagar","Glass Railings","Custom Steel Gates","Automatic Remote Gates","Remote Rolling Shutters","UPVC & Aluminum Windows","Heavy Channel Beam Work","Buffing, Mat & Mirror Polish","General Fabrication","SS Furniture"]
+    services: ["Stainless Steel Railings in Mahabubnagar","Glass Railings","Custom Steel Gates","Automatic Remote Gates","Remote Rolling Shutters","UPVC & Aluminum Windows","Buffing, Mat & Mirror Polish","General Fabrication","SS Furniture"]
   },
   hi: {
     siteName: "हैदराबाद इंजीनियरिंग एंड फैब्रिकेशन वर्क्स",
@@ -34,7 +34,7 @@ const translations = {
     locationHeading: "हमारी वर्कशॉप पर आएं",
     hours: "प्रतिदिन खुला, सुबह 9:00 – रात 10:00",
     contactHeading: "संपर्क करें",
-    services: ["स्टेनलेस स्टील रेलिंग","ग्लास रेलिंग","कस्टम गेट्स","ऑटोमैटिक रिमोट गेट्स","रिमोट रोलिंग शटर","यूपीवीसी और एल्युमिनियम विंडोज़","हेवी चैनल बीम वर्क","बफिंग, मैट और मिरर पॉलिश","जनरल फैब्रिकेशन","एसएस फर्नीचर"]
+    services: ["स्टेनलेस स्टील रेलिंग","ग्लास रेलिंग","कस्टम गेट्स","ऑटोमैटिक रिमोट गेट्स","रिमोट रोलिंग शटर","यूपीवीसी और एल्युमिनियम विंडोज़","बफिंग, मैट और मिरर पॉलिश","जनरल फैब्रिकेशन","एसएस फर्नीचर"]
   },
   ur: {
     siteName: "حیدرآباد انجینئرنگ اینڈ فیبریکیشن ورکس",
@@ -52,7 +52,7 @@ const translations = {
     locationHeading: "ہماری ورکشاپ ملاحظہ کریں",
     hours: "روزانہ کھلا، صبح 9:00 بجے – رات 10:00 بجے",
     contactHeading: "ہم سے رابطہ کریں",
-    services: ["اسٹینلیس اسٹیل ریلنگ","گلاس ریلنگ","حسب ضرورت گیٹس","آٹومیٹک ریموٹ گیٹس","ریموٹ رولنگ شٹرز","یو پی وی سی اور ایلومینیم کھڑکیاں","ہیوی چینل بیم ورک","بفنگ، میٹ اور مرر پالش","جنرل فیبریکیشن","ایس ایس فرنیچر"]
+    services: ["اسٹینلیس اسٹیل ریلنگ","گلاس ریلنگ","حسب ضرورت گیٹس","آٹومیٹک ریموٹ گیٹس","ریموٹ رولنگ شٹرز","یو پی وی سی اور ایلومینیم کھڑکیاں","بفنگ، میٹ اور مرر پالش","جنرل فیبریکیشن","ایس ایس فرنیچر"]
   },
   te: {
     siteName: "హైదరాబాద్ ఇంజనీరింగ్ అండ్ ఫ్యాబ్రికేషన్ వర్క్స్",
@@ -70,11 +70,11 @@ const translations = {
     locationHeading: "మా వర్క్‌షాప్‌ను సందర్శించండి",
     hours: "ప్రతిరోజూ తెరిచి ఉంటుంది, ఉదయం 9:00 – రాత్రి 10:00",
     contactHeading: "మమ్మల్ని సంప్రదించండి",
-    services: ["స్టెయిన్‌లెస్ స్టీల్ రైలింగ్స్","గ్లాస్ రైలింగ్స్","కస్టమ్ గేట్స్","ఆటోమేటిక్ రిమోట్ గేట్స్","రిమోట్ రోలింగ్ షట్టర్స్","యుపివిసి & అల్యూమినియం విండోస్","హెవీ ఛానల్ బీమ్ వర్క్","బఫింగ్, మ్యాట్ & మిర్రర్ పాలిష్","జనరల్ ఫ్యాబ్రికేషన్","ఎస్ఎస్ ఫర్నిచర్"]
+    services: ["స్టెయిన్‌లెస్ స్టీల్ రైలింగ్స్","గ్లాస్ రైలింగ్స్","కస్టమ్ గేట్స్","ఆటోమేటిక్ రిమోట్ గేట్స్","రిమోట్ రోలింగ్ షట్టర్స్","యుపివిసి & అల్యూమినియం విండోస్","బఫింగ్, మ్యాట్ & మిర్రర్ పాలిష్","జనరల్ ఫ్యాబ్రికేషన్","ఎస్ఎస్ ఫర్నిచర్"]
   }
 };
 
-// ---------- SERVICE ICONS ----------
+// ---------- SERVICE ICONS (9 icons now, "Heavy Channel Beam Work" icon removed) ----------
 const serviceIcons = [
   '<svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20h16M4 20V6M20 20V6M4 6h16M7 6v14M11 6v14M15 6v14"/></svg>',
   '<svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="8" width="16" height="9" rx="1"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="6" y1="17" x2="6" y2="20"/><line x1="18" y1="17" x2="18" y2="20"/></svg>',
@@ -82,17 +82,12 @@ const serviceIcons = [
   '<svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="6" height="15"/><rect x="11" y="5" width="6" height="15"/><path d="M18 6a3 3 0 0 1 3 3"/><path d="M18 3a6 6 0 0 1 6 6"/></svg>',
   '<svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="4" y1="6" x2="17" y2="6"/><line x1="4" y1="10" x2="17" y2="10"/><line x1="4" y1="14" x2="17" y2="14"/><line x1="4" y1="18" x2="17" y2="18"/><path d="M19 6a3 3 0 0 1 3 3"/></svg>',
   '<svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="1"/><line x1="12" y1="4" x2="12" y2="20"/><line x1="4" y1="12" x2="20" y2="12"/></svg>',
-  '<svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="9" y="4" width="6" height="16"/><line x1="5" y1="4" x2="19" y2="4"/><line x1="5" y1="20" x2="19" y2="20"/></svg>',
   '<svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M6 18l2.5-2.5M15.5 8.5L18 6"/></svg>',
   '<svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-6 6a2 2 0 1 0 2.8 2.8l6-6a4 4 0 0 0 5.4-5.4l-2.1 2.1-2.1-.7-.7-2.1z"/></svg>',
   '<svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 4v9a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V4"/><line x1="6" y1="20" x2="6" y2="16"/><line x1="18" y1="20" x2="18" y2="16"/><line x1="6" y1="13" x2="18" y2="13"/></svg>'
 ];
 
 // ---------- APPLY TRANSLATION ----------
-// Note: the HTML already contains real, crawlable English content for
-// services and gallery (good for SEO). We only rebuild these into the
-// icon-enhanced version when a non-English language is chosen, or when
-// English is explicitly re-selected via the switcher (to restore icons).
 function applyLanguage(lang) {
   const dict = translations[lang];
   if (!dict) return;
@@ -136,13 +131,9 @@ initScrollReveal();
 
 if (savedLang) {
   popup.style.display = 'none';
-  // Only rebuild via JS if a non-English language was saved.
-  // If English was saved, leave the static HTML content as-is (already correct)
-  // but still apply the icon-enhanced version for consistency.
   applyLanguage(savedLang);
 } else {
   popup.style.display = 'flex';
-  // Gallery images are already in the static HTML — nothing to build here.
 }
 
 document.querySelectorAll('.lang-btn').forEach(button => {
