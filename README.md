@@ -1,4 +1,4 @@
-# Hyderabad Engineering & Fabrication Works — Business Website
+# Hyderabad Engineering & Fabrication Works - Business Website
 
 A multilingual, SEO-optimized marketing website built for a stainless steel fabrication business based in Mahabubnagar, Telangana, India, designed to establish local search visibility across a linguistically diverse customer base.
 
@@ -12,7 +12,7 @@ The project required building a site from a real client brief with an existing b
 
 ## Approach
 
-The site was scoped as a single-page, static brochure site rather than a multi-page application, given the absence of any backend requirements (no user accounts, forms, or dynamic data). Content is presented in four languages — English, Hindi, Urdu, and Telugu — selected through a mandatory language prompt on first visit, with the choice persisted in browser storage and changeable at any time through a header switcher. Urdu is rendered with full right-to-left layout support.
+The site was scoped as a single-page, static brochure site rather than a multi-page application, given the absence of any backend requirements (no user accounts, forms, or dynamic data). Content is presented in four languages - English, Hindi, Urdu, and Telugu - selected through a mandatory language prompt on first visit, with the choice persisted in browser storage and changeable at any time through a header switcher. Urdu is rendered with full right-to-left layout support.
 
 Particular attention was paid to search engine visibility for a newly registered domain competing against established, high-authority directory sites for local search terms. This included implementing JSON-LD structured data (Schema.org LocalBusiness and Organization types), ensuring core content is present in static HTML rather than injected exclusively by JavaScript, submitting an XML sitemap through Google Search Console, and configuring keyword-relevant metadata aligned with actual local search query patterns rather than generic industry terms.
 
